@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>    
+
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+            background:#262626;
+
+        }
+        .light
+        {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            margin: 0;
+            padding: 0;
+            display: flex;
+
+        }
+        .light .light1{
+            list-style: none;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 3em;
+            letter-spacing: 15px;
+            text-shadow: none;
+            animation: animate 1.5s infinite linear;
+        }
+        @keyframes animate {
+            0% {
+                color: #484848;
+                text-shadow: none;
+                 }
+                 18%{
+                    color: #484848;
+                    text-shadow: none;
+
+                 }
+                 20% {
+                color:#fff900;
+                text-shadow: 0 0 7px #fff900 , 0,0,20px #fff900;
+                 }
+                 30%{
+                    color: #484848;
+                    text-shadow: none;
+
+                 }
+                 35%
+                 {
+                    color: #fff900;
+                    text-shadow: 0 0 7px #fff900 , 0 0 20px #fff900;
+
+                 }
+                 70%{
+                    color: #484848;
+                    text-shadow: none;
+                 }
+                 85%{
+                    color: #fff900;
+                    text-shadow: 0 0 7px #fff900 , 0 0 20px #fff900;
+
+                 }
+                 90%{
+                    color: #484848;
+                    text-shadow: none;
+                 }
+                 100%{
+                    color: #484848;
+                    text-shadow: none;
+                 }
+                        }
+          .light .light1:nth-chil(1)
+                 {
+                    animation-delay:2s;
+                 }
+                 .light .light1:nth-chil(2)
+                 {
+                    animation-delay:4s;
+                 }
+                 .light .light1:nth-chil(3)
+                 {
+                    animation-delay:6s;
+                 }
+                 .light .light1:nth-chil(4)
+                 {
+                    animation-delay:8s;
+                 }
+                 .light .light1:nth-chil(5)
+                 {
+                    animation-delay:1s;
+                 }
+                 .light .light1:nth-chil(6)
+                 {
+                    animation-delay:1.2s;
+                 }
+                 .light .light1:nth-chil(7)
+                 {
+                    animation-delay:1.4s;
+                 }
+ 
+    
+    </style>
+   
+ </head>
+<body>
+   <nav class="navbar navbar-expand-lg bg-body-tertiary" >
+      <div class="container-fluid"  >
+        <a class="navbar-brand" href="index.html" >@NUJ</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="index.html"  >HOME</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="work.html">CONTACT</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                SKILL'S
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="web_degine.html">WEB DEGINE</a></li>
+                <li><a class="dropdown-item" href="#">PYTHON</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="#"> CCC</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled" aria-disabled="true">❤️</a>
+            </li>
+          </ul>
+          <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Search</button>
+          </form>
+        </div>
+      </div>
+    <br>
+  </nav>
+  <div class="light_box">
+    <ul class="light">
+      <li class="light1">A</li>
+       <li class="light1">J</li>
+       <li class="light1">J</li>
+       <li class="light1">U</li>
+        <li class="light1">B</li>
+        <li class="light1">H</li>
+        <li class="light1">A</li>
+        <li class="light1">I</li>
+       
+
+        
+ </ul> 
+</div>
+
+</body>
+</html>

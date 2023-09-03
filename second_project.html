@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> web_degine</title>
+    <style> 
+  
+      
+    h1
+    {
+        color: aquamarine;
+        left: -10px;
+    }
+        body
+        {  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("ajju-space.jpg");
+            width: auto;
+            height: auto;
+            /* Position and center the image to scale nicely on all screens */
+            background-position: center;
+            background-size: cover;
+            position: relative;
+             display: flex;
+            align-items: center;
+            justify-content: center; 
+                 
+            
+}
+    .container
+        {
+            font-size: 10px;
+            width: 10em;
+            height: 40em;
+            position: relative;
+            left: -50px;
+        }
+        .sun
+        {
+            position: absolute;
+            top: 15em;
+            left: -8em;
+            width: 20em;
+            height: 20em;
+            background-color:yellow;
+            border-radius: 50%;
+            box-shadow: 0 0 3em rgb(211, 207, 198);
+            color: antiquewhite;
+        }
+        .earth ,.moon
+        {
+            position: absolute;
+            border-style: solid;
+            border-color: white transparent transparent transparent;
+            border-width: 0.1em 0.1em 0 0;
+            border-radius: 50%;
+            box-shadow: 0 0 3em rgb(74, 73, 72);
+        
+
+
+            
+        }
+        .earth
+        {
+            top: -5em;
+            left: -5em;
+            width: 30em;
+            height: 30em;
+            animation: orbit 36.5s linear infinite;
+            color: antiquewhite;
+
+        }
+        .moon{
+            top: 0%;
+            right: 0%;
+            width: 8em;
+            height: 8em;
+            animation: orbit 2.7s linear infinite;
+        }
+        .earth::before,.moon::before
+        {
+            content: "";
+            position: absolute;
+            border-radius: 50%;
+            
+        }
+        .earth::before{
+            top: 2.8em;
+            right: 2.8em;
+            width: 3em;
+            height: 3em;
+            background:aqua;
+        }
+        .moon::before
+        {
+            top: 0.8em;
+            right: 0.2em;
+            width: 1.2em;
+            height: 1.2em;
+            background:whitesmoke;
+        }
+        @keyframes orbit{
+            to{
+                transform:rotate(360deg);
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- <h1>  THIS IS MY SECOND PROJECT</h1> -->
+    <div class="container">
+        <div class="sun">
+            <div class="earth">
+                <div class="moon"></div>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>

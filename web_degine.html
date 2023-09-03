@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="font/css/all.min.css">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  
+        background-image:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url("b.gif");
+        /* background-repeat: no-repeat; */
+        height: 100vh;
+        background-size: cover;
+        position: relative;
+
+
+      
+}
+
+/* Float four columns side by side */
+.column {
+  float: left;
+  width: 25%;
+  padding: 0 10px;
+  background-color: rgb(194, 199, 100);
+  opacity: 0.6;
+  border-radius: 10px;
+
+}
+
+/* Remove extra left and right margins, due to padding */
+.row {margin: 0 -5px;}
+
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive columns */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
+}
+
+/* Style the counter cards */
+.card {
+  padding: 16px;
+  text-align: center;
+  background-color:rgb(11, 24, 22);
+  color:whitesmoke;
+  font-size: 20px;
+  box-shadow: 0px 15px 20px 2px white;
+  border-radius: 12px;
+}
+.card:hover
+{
+   padding: 25px;;
+
+}
+.text{
+   color: aqua;
+   text-shadow: rgb(30, 35, 43) 2pc 8px 20px;
+   font-size: xxx-large;
+}
+.click
+{
+   background: #000;
+   color: aquamarine;
+   border: none;
+   border-radius: 20px;
+   padding:10px;
+   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+.click:hover{
+   background:rgb(14, 202, 52);
+   color: blue;
+   font-size:15px;
+}
+.container
+{
+   margin-top: 400px;
+   text-align:center;
+   width: 100%;
+   height:40px;
+   
+}
+.font
+{
+   float: left;
+   position: absolute;
+   top: -40px;
+}
+button
+{
+   position: relative;
+   top: 5px;
+   border: none;
+   height: 30px;
+   border-radius: 20px;
+}
+button:hover{
+   padding: 10px;
+}
+</style>
+</head>
+<body>
+
+<marquee class="text">THIS IS MY Web_Degine PROJECT'S:</marquee>
+<p></p>
+
+<div class="row">
+  <div class="column">
+    <div class="card">
+      <p>Light blinking Project..</p>
+      <p>AJJU BHAI</p>
+    <a href="first_project.html"><button class="click">click 👇me</button></a>
+
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+      <p>Solar system Project...</p>
+      <p>Sun,Earth & Moon</p>
+      <a href="second_project.html"><button class="click">click 👇me</button></a>
+
+    </div>
+  </div>
+  
+  <div class="column">
+    <div class="card">
+      <p>Dark Mode & Light Mode...</p>
+      <p>🌃&🌞</p>
+      <a href=""><button class="click">click 👇me</button></a>
+
+    </div>
+  </div>
+  
+  <div class="column">
+    <div class="card">
+      <p>Some text</p>
+      <p>Some text</p>
+      <a href=""><button class="click">click 👇me</button></a>
+
+    </div>
+  </div>
+</div>
+
+
+<!-- Remove the container if you want to extend the Footer to full width. -->
+<div class="container my-5">
+
+   <footer class="text-center text-lg-start" style="background-color: #8dbcbd;">
+     <div class="container d-flex justify-content-center py-5">
+       <button type="button" class="btn btn-primary btn-lg btn-floating mx-2"style="background-color: #000000;" >
+       <a href="https://www.facebook.com/profile.php?id=100090558317621"><i class="fa-brands fa-facebook fa-lg" style="color: #0a64ff;"></i></a>
+       </button>
+       <button type="button" class="btn btn-primary btn-lg btn-floating mx-2" style="background-color: #000000;">
+        <a href="https://www.youtube.com/channel/UC95yu1o6_8kq4oEEEykds_Q"><i class="fa-brands fa-youtube fa-fade fa-lg" style="color: #cd1d1d;"></i></a> 
+       </button>
+       <button type="button" class="btn btn-primary btn-lg btn-floating mx-2" style="background-color: #0a0909;">
+       <a href="">  <i class="fa-brands fa-instagram" style="color: #d737a5;"></i></a>
+       </button>
+       <button type="button" class="btn btn-primary btn-lg btn-floating mx-2" style="background-color: #000000;">
+         <a href="https://github.com/ANUJPANCHAL88022"><i class="fa-brands fa-github fa-lg" style="color: #e3dcdc;"></i></a>
+       </button>
+     </div>
+
+     <!-- Copyright -->
+     <div class="text-center text-white p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+       © 2023 ANUJ PANCHAL...
+       <a class="text-white" href="whatsapp">88-0223-0558</a>
+     </div>
+     <!-- Copyright -->
+   </footer>
+   
+ </div>
+ <!-- End of .container -->
+
+</body>
+</html>
